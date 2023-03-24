@@ -18,3 +18,8 @@ Slides available [here](https://docs.google.com/presentation/d/1pnvuI9dAY7IVbbm2
 - The "impostors"
 
 Slides available soon.
+
+# Corpus
+
+Main corpus forked and adapted from: https://github.com/computationalstylistics/100_english_novels
+Additional materials downloaded from [Project Gutenberg](https://www.gutenberg.org/) and [Project Gutenberg Australia](https://gutenberg.net.au/).

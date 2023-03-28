@@ -38,7 +38,7 @@ list_files_new <- gsub(pattern = "corpus/", replacement = "reference_set/", list
 file.copy(list_files, list_files_new)
 
 # finally, we copy our test file
-file.copy("materials/Woolf_Pastiche.txt", "test_set/My_text.txt")
+file.copy("materials/Woolf_Orlando_1928.txt", "test_set/My_text.txt")
 # as it's only one, we can do it with a single command
 
 # now, we are ready to call the rolling stylometry function

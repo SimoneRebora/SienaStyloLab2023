@@ -12,6 +12,12 @@
 # before you start, install the required packages
 # (if a warning is shown above)
 
+### Important note!!
+# This is a RAM-intensive script.
+# Before you run it on PositCloud, you should:
+# "Restart R" and "Clear the workspace"
+# ...in the "Session" menu above
+
 # Call the packages
 library(stylo)
 library(udpipe)
@@ -39,25 +45,6 @@ stylo_result$features[6]
 ngram_freq <- stylo_result$table.with.all.freqs
 ngram_freq <- as.data.frame(t(ngram_freq))
 View(ngram_freq)
-
-# repeat analysis with different n-gram selections
-stylo_result <- stylo(distance.measure="dist.delta",
-                      analyzed.features = "c",
-                      ngram.size = 4,
-                      mfw.min=1000, 
-                      mfw.max=1000)
-
-stylo_result <- stylo(distance.measure="dist.delta",
-                      analyzed.features = "c",
-                      ngram.size = 3,
-                      mfw.min=2000, 
-                      mfw.max=2000)
-
-stylo_result <- stylo(distance.measure="dist.wurzburg",
-                      analyzed.features = "c",
-                      ngram.size = 3,
-                      mfw.min=2000, 
-                      mfw.max=2000)
 
 ### 2. Udpipe
 
@@ -109,4 +96,5 @@ stylo_result$features
 #####
 
 # try different POS ngram selections in the last analysis
-# does it improve?
+# ...does it improve?
+# Tip: change also the distance measure (see Appendix to "01_intro_stylometry.R" for details)

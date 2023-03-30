@@ -14,6 +14,7 @@ library(stylo)
 # ...you'll have to do it each time you re-start the project
 
 # load the case study (Galbraith vs. Rowling)
+# taken from: https://computationalstylistics.github.io/docs/imposters
 data(galbraith)
 
 # get general info
